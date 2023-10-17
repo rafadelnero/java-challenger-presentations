@@ -3,9 +3,7 @@ package com.reliant;
 import com.defiant.Spock;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-
 public class Executor {
-
   public static void main(String... doYourBest) throws NoSuchMethodException,
           InvocationTargetException, IllegalAccessException {
     new Spock().doh();

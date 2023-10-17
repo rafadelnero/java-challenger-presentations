@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class StreamChallenge {
-
   public static void main(String... crewOrder) {
     List<String> crew = Arrays.asList("Kirk", "Spock", "Uhura");
     
