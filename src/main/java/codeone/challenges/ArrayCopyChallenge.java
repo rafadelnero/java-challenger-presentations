@@ -3,7 +3,6 @@ package codeone.challenges;
 import java.util.Arrays;
 
 public class ArrayCopyChallenge {
-
   public static void main(String... letsClonePeople) {
     String[] crew = new String[] {"Spock", "Scott", "Quark"};
     String[] crewClones = Arrays.copyOf(crew, 2);

@@ -9,8 +9,8 @@ public class ShipDoorEp2 implements AutoCloseable {
   @Override
   public void close() throws Exception {
     throw new RuntimeException("Fail to auto-close door.");
-  }  
-  
+  }
+
   public static void main(String... doorMalfunction) {
     try (ShipDoorEp2 shipDoor = new ShipDoorEp2()) {
       shipDoor.open();

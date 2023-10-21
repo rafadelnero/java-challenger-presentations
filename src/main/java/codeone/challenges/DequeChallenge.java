@@ -7,7 +7,7 @@ import java.util.LinkedList;
 public class DequeChallenge {
 
   public static void main(String... confusedCrew) {
-    Deque<String> crew = new LinkedList<String>();
+    Deque<String> crew = new LinkedList<>();
     crew.addFirst("Worf");
     crew.push("Odo");
     crew.addLast("Scott");

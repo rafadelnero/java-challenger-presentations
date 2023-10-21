@@ -21,7 +21,6 @@ public class PatternMatcherChallenge {
       System.out.println(object.toString() + ":serializable");
     }
   }
-
 }
 
 /**
