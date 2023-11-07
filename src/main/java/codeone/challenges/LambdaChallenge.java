@@ -8,7 +8,7 @@ public class LambdaChallenge {
     int doorNumber = 0;
     List<String> doors = Arrays.asList("A", "B", "C");
     doors.forEach(e -> {
-      //System.out.println(e + doorNumber++);
+      System.out.println(e + doorNumber++);
     });
   }
 
