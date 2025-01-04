@@ -5,7 +5,7 @@ public class SimpsonTemplateChallenge {
         String parentName = "Homer";
         int number1 = 10;
         int number2 = 8;
-        System.out.println(STR."Hey, I am \{parentName}, I am \{number1 * 3} + \{number2} years old");
+//        System.out.println(STR."Hey, I am \{parentName}, I am \{number1 * 3} + \{number2} years old");
 
         var childName = "Bart";
         String test = "\\{childName} is \\{number1} years old";
