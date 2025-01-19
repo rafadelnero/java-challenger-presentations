@@ -1,4 +1,5 @@
 package jchampions.challengers;
+
 class Product {
     protected String name;
     protected double price;
@@ -6,18 +7,18 @@ class Product {
     public Product(String name, double price) {
         this.name = name;
         this.price = price;
+        System.out.println("New Product created " + name);
     }
+
     public static void main(String[] args) {
-        // Create a valid discounted product
-        DiscountedProduct discountedProduct = new DiscountedProduct("Laptop", 1000.0, 20.0);
-        System.out.println("Product Name: " + discountedProduct.name + " Price: " + discountedProduct.price);
+        new Laptop("Laptop C101", 500.0);
     }
 }
 
-class DiscountedProduct extends Product {
+class Laptop extends Product {
 
-    public DiscountedProduct(String name, double price, double discount) {
-        double discountedPrice = price - (price * (discount / 100));
-        super(name, discountedPrice);
+    public Laptop(String name, double price) {
+        if (price < 500.0) throw new IllegalArgumentException("Laptop price must be >= 500.0");
+        super(name, price);
     }
 }
