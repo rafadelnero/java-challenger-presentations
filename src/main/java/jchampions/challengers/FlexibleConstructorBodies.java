@@ -1,24 +1,25 @@
 package jchampions.challengers;
 
 class Product {
-    protected String name;
     protected double price;
 
-    public Product(String name, double price) {
-        this.name = name;
+    public Product(double price) {
         this.price = price;
-        System.out.println("New Product created " + name);
-    }
-
-    public static void main(String[] args) {
-        new Laptop("Laptop C101", 500.0);
+        System.out.println("New Product created with price " + price);
     }
 }
 
 class Laptop extends Product {
+    private String model;
 
-    public Laptop(String name, double price) {
+    public Laptop(double price, String model) {
+        this.model = model;
         if (price < 500.0) throw new IllegalArgumentException("Laptop price must be >= 500.0");
-        super(name, price);
+        super(price);
+    }
+
+    public static void main(String[] args) {
+        Laptop laptop = new Laptop(750.0, "Model X");
+        System.out.println("Laptop Model: " + laptop.model);
     }
 }
